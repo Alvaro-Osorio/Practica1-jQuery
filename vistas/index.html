@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../css/fontello.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        //Tabs
+        $(function() {
+            $("#tabs").tabs();
+        });
+        //Autocomplete
+        $(function() {
+            var availableTags = [
+                "Guitarras",
+                "Teclados",
+                "Acordeones",
+                "Flautas",
+                "Microfonos",
+                "Bocinas",
+                "Amplificadores",
+                "Tambores",
+                "Baterias",
+                "Accesorios",
+                "Requintos",
+                "Hukulele",
+                "Marimbas",
+                "Violines",
+                "Armonicas",
+            ];
+            $("#tags").autocomplete({
+                source: availableTags
+            });
+        });
+        //Button
+        $(function() {
+            $(".widget input[type=submit], .widget a, .widget button").button();
+            $("button, input, a").click(function(event) {});
+        });
+    </script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="logo-container">
+                <h1 class="logo">Music Store</h1>
+            </div>
+            <div class="main-header__contactInfo">
+                <p class="main-header__contactInfo__phone"><span class="icon-whatsapp">999-999-999</span></p>
+                <p class="main-header__contactInfo__address"><span class="icon-headphones">Escuchanos donde te encuentres!</span></p>
+            </div>
+        </div>
+    </header>
+    <br>
+    <div class="ui-widget">
+        <label for="tags"><b> Buscar: </b></label>
+        <input id="tags">
+    </div>
+    <br>
+    <div id="tabs">
+        <ul>
+            <li><a href="#nosotros"><b> Nosotros </b></a></li>
+            <li><a href="#guitarras"><b> Guitarras </b></a></li>
+            <li><a href="#baterias"><b> Baterias </b></a></li>
+            <li><a href="#audio"><b> Audio </b></a></li>
+        </ul>
+        <div id="nosotros">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fuga porro neque, at reiciendis sapiente commodi minima quasi ducimus eveniet ea, quisquam mollitia quibusdam? Perferendis facere corrupti alias reprehenderit totam.</p>
+            <img src="../img/header.jpg" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, molestiae nam laudantium aspernatur id praesentium aliquid deleniti quos vero sunt, neque, suscipit vel explicabo distinctio ratione obcaecati officia doloremque ab?</p>
+            <p class="icon-instagram">
+                <a class="icon-facebook"></a>
+                <a class="icon-twitter"></a>
+                <a class="icon-whatsapp"></a>
+                Siguenos en nuestras redes sociales</p>
+        </div>
+        <div id="guitarras">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe corporis veniam sed asperiores. Sapiente aspernatur saepe dolorum animi commodi, laborum maiores laudantium corrupti delectus omnis nostrum necessitatibus error nisi eligendi.</p>
+            <div class="widget">
+                <a href="guitarras.html">Ver más</a>
+            </div>
+        </div>
+        <div id="baterias">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum accusamus incidunt et, amet aperiam illum pariatur cumque alias rerum atque obcaecati enim ipsum accusantium minima molestias? Dignissimos magni culpa repudiandae. </p>
+            <div class="widget">
+                <a href="#">Ver más</a>
+            </div>
+        </div>
+        <div id="audio">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, aliquam incidunt. Eligendi architecto repellendus aperiam ullam accusantium maxime eaque soluta repudiandae iure ex quaerat libero quam minus ipsa, commodi perspiciatis. </p>
+            <div class="widget">
+                <a href="#">An anchor</a>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

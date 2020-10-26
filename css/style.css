@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Shadows Into Light', cursive;
+    margin: 0;
+}
+
+div #tabs {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.container--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ui-widget label {
+    font-family: 'Shadows Into Light', cursive;
+    align-items: flex-end;
+}
+
+#nosotros {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#guitarras {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#audio {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#baterias {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.logo {
+    font-size: 2.3em;
+    color: rgb(24, 95, 24);
+}
+
+#tabs ul li {
+    background: rgba(49, 109, 41, 0.349);
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.main-header {
+    width: 100%;
+    background: rgba(49, 109, 41, 0.349);
+}
+
+#accordion img {
+    display: inline-flex;
+    width: 400px;
+}
